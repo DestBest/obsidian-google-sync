@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the personal Obsidian Google Sync integration.">
+  <title>Privacy Policy | Obsidian Google Sync</title>
+  <style>
+:root{color-scheme:dark;--bg:#0c101a;--panel:#151d2d;--text:#ecf1fa;--muted:#b1bed1;--line:#2b3a51;--accent:#ac93ff}
+*{box-sizing:border-box}html{font-size:16px}body{margin:0;background:radial-gradient(circle at 80% 0%,#242447 0,transparent 35%),var(--bg);color:var(--text);font:16px/1.75 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:#c3b4ff}a:hover{color:#e8e0ff}header,main,footer{width:min(820px,calc(100% - 42px));margin:auto}
+header{display:flex;gap:18px;justify-content:space-between;align-items:center;padding:28px 0;border-bottom:1px solid var(--line)}
+.brand{color:var(--text);font-weight:750;text-decoration:none;white-space:nowrap}.brand:before{content:'◈';color:var(--accent);margin-right:9px}
+nav{display:flex;flex-wrap:wrap;gap:16px;font-size:0.88rem}nav a{text-decoration:none;color:var(--muted)}nav a[aria-current=page]{color:var(--text)}
+main{padding:55px 0 72px}.eyebrow{text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-size:.76rem;font-weight:750}
+h1{font-size:clamp(2.1rem,5vw,3.3rem);line-height:1.17;letter-spacing:-.035em;margin:.65rem 0 1.3rem}h2{font-size:1.22rem;line-height:1.35;margin:2rem 0 .6rem}p,li{color:var(--muted)}.lead{font-size:1.15rem;max-width:660px}
+.panel{background:var(--panel);padding:24px 28px;border:1px solid var(--line);border-radius:16px;margin:28px 0}.panel h2:first-child{margin-top:0}.panel p:last-child{margin-bottom:0}
+ul{padding-left:22px}li{padding-left:4px;margin:7px 0}strong{color:var(--text)}
+footer{font-size:.82rem;color:var(--muted);padding:22px 0 35px;border-top:1px solid var(--line)}footer a{color:var(--muted)}
+@media(max-width:650px){header{display:block}nav{margin-top:8px}main{padding-top:35px}}
+</style>
+</head>
+<body>
+  <header><a class="brand" href="home.html">Obsidian Google Sync</a><nav aria-label="Main navigation"><a href="home.html">Home</a> <a href="privacy.html" aria-current="page">Privacy</a> <a href="terms.html">Terms</a> <a href="https://github.com/DestBest/obsidian-google-sync">GitHub</a></nav></header>
+  <main>
+    <p class="eyebrow">Policies · Updated November 2, 2026</p>
+    <h1>Privacy Policy</h1>
+    <p class="lead">This policy explains how the personal <strong>Obsidian Google Sync</strong> OAuth integration and its associated open-source Obsidian plugin handle Google user data.</p>
+    <h2>1. Data accessed</h2>
+    <p>After Google authorization, the plugin can access Google Calendar event information (such as titles, dates, times, descriptions, locations and calendar identifiers) and Google Tasks information (such as titles, due dates, notes and completion status), as permitted by the requested Google API scopes. It also reads and edits notes in the Obsidian folders configured for synchronization.</p>
+    <h2>2. Purpose and use</h2>
+    <p>Google data is used only to import calendar events and tasks into the Obsidian vault, compare them with linked local notes, and apply authorized changes to existing Google items. The plugin does not create or delete Google Calendar events or Tasks. It does not use Google user data for advertising, profiling, sale of data, or training AI models.</p>
+    <h2>3. Storage and retention</h2>
+    <p>Imported event and task information is stored as local Markdown notes in the user's Obsidian vault. Plugin settings and Google OAuth tokens are stored locally in <code>.obsidian/plugins/google-sync/data.json</code>. Data remains there until the user changes or deletes it, including any copies held by the user's own vault backup or synchronization service. This personal integration does not operate a server database storing Google Calendar or Tasks content.</p>
+    <h2>4. Data sharing and transmission</h2>
+    <p>The Obsidian plugin communicates directly with Google APIs to synchronize permitted data. It does not intentionally transfer calendar or task contents, or stored OAuth tokens, to the GitHub Pages website or to an application developer's hosted sync server. No analytics or advertising scripts are included on these informational pages. GitHub, as the website host, may process ordinary website request information under its own privacy terms.</p>
+    <h2>5. OAuth callback</h2>
+    <p>The GitHub Pages callback at <a href="https://destbest.github.io/obsidian-google-sync/">https://destbest.github.io/obsidian-google-sync/</a> receives Google's temporary OAuth response through the browser and forwards the authorization code and state to Obsidian via an <code>obsidian://</code> link. It does not intentionally save the code on the webpage or exchange it for access tokens. As with other web redirects, URL details may appear temporarily in browser history or hosting-related request logs. Keep your vault and browser secure.</p>
+    <h2>6. User choices and deletion</h2>
+    <ul>
+      <li>Choose the calendars, task lists, folders, and synchronization options inside the plugin.</li>
+      <li>Disconnect the Google account from the Obsidian plugin.</li>
+      <li>Revoke the app's Google permissions at <a href="https://myaccount.google.com/connections">Google Account connections</a>.</li>
+      <li>Delete imported notes and local plugin data if no longer needed; review separately configured backups and cloud vault synchronization.</li>
+    </ul>
+    <h2>7. Security</h2>
+    <p>Google credentials and local notes are sensitive. Protect device access and vault backups; do not publish your Obsidian plugin data file or OAuth tokens. No method of local storage or internet transmission can guarantee absolute security.</p>
+    <h2>8. Changes and contact</h2>
+    <p>This policy may be updated if the integration's functionality or data handling changes. The latest version will be available on this page. For questions, contact the maintainer of this personal configuration via the <a href="https://github.com/DestBest/obsidian-google-sync">associated GitHub repository</a>.</p>
+
+  </main>
+  <footer>Personal OAuth integration using the open-source Google Calendar and Tasks Sync plugin. Not affiliated with Google or Obsidian. &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></footer>
+</body>
+</html>
